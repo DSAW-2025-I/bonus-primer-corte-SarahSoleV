@@ -1,5 +1,52 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+h1 {
+  color: #2F4F4F;
+}
+
+.playwrite-it-moderna-title,
+.playwrite-it-moderna-input,
+.playwrite-it-moderna-button {
+  font-family: "Playwrite IT Moderna", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#customButton {
+  background-color: #F0F8FF; 
+  color: #2F4F4F;
+  border-radius: 4px; 
+  cursor: pointer; 
+  margin-left: 10px;
+}
+
+#customButton:hover {
+  background-color: #E6E6FA; 
+}
+
+.container {
+  padding: 3%;
+  max-width: 600px;
+  background-color: #ADD8E6;
+  border-radius: 35px;
+}
+
+  #taskList {
+  margin-top: 20px;
+}
+
+  .completed {
+    text-decoration: line-through;
+    color: #6c757d; 
+  }
+
+@media (max-width: 576px) {
+  .input-container {
+    flex-direction: column;
+  }
+
+  .input-container .form-control,
+  .input-container .btn {
+    width: 100%;
+    margin: 5px;
+  }
 }
