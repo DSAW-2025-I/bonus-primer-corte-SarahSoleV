@@ -1,13 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Mi TODO list</h1>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center playwrite-it-moderna-title">Lista de Tareas</h1>
+        <div class="input-container d-flex justify-content-center mt-4 mb-4">
+            <input type="text" id="taskInput" class="form-control w-50 playwrite-it-moderna-input" placeholder="Nueva tarea...">
+            <button id="customButton" class="btn playwrite-it-moderna-button">Agregar</button>
+        </div>
+        <ul id="taskList" class="list-group"></ul>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="scripts/script.js"></script>
-  </body>
+</body>
 </html>
